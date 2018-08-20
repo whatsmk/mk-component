@@ -39,14 +39,14 @@ import TransferComponent from './components/transfer'
 import InputComponent from './components/input'
 import SelectComponent from './components/select'
 import DropdownComponent from './components/dropdown'
-import EchartsComponent from './components/echarts'
+//import EchartsComponent from './components/echarts'
 import DataGridComponent from './components/datagrid'
 import TableComponent from './components/table'
 import FormComponent from './components/form'
 import GridLayoutComponent from './components/gridLayout'
-import JSONTreeComponent from './components/jsonTree'
+//import JSONTreeComponent from './components/jsonTree'
 //import RedboxReactComponent from './components/redboxReact'
-import AttachmentComponent from './components/attachment'
+//import AttachmentComponent from './components/attachment'
 import MovableComponent from './components/movable'
 import ListComponent from './components/list'
 import AvatarComponent from './components/avatar'
@@ -99,9 +99,9 @@ export const DataGrid = DataGridComponent
 export const Table = TableComponent
 export const Form = FormComponent
 export const GridLayout = GridLayoutComponent
-export const JSONTree = JSONTreeComponent
+//export const JSONTree = JSONTreeComponent
 //export const RedboxReact = RedboxReactComponent
-export const Attachment = AttachmentComponent
+//export const Attachment = AttachmentComponent
 export const Movable = MovableComponent
 export const List = ListComponent
 export const Avatar = AvatarComponent
