@@ -7,7 +7,7 @@ export default function IconComponent(props) {
 	if (props.visible === false)
 		return null
 
-	let showStyle = props.showStyle
+	let {showStyle, fontFamily, ...other} = props.showStyle
 
 	if (props.disabled) {
 		showStyle = 'disabled'
@@ -15,7 +15,7 @@ export default function IconComponent(props) {
 
 	let className = 'mk-icon'
 
-	if (props.fontFamily == 'awesome') {
+	if (fontFamily == 'awesome') {
 		className = classNames({
 			[className]: true,
 			[`mkicon--${showStyle}`]: !!showStyle,
@@ -26,11 +26,11 @@ export default function IconComponent(props) {
 
 	className = classNames({
 		[className]: true,
-		[props.fontFamily]: !!props.fontFamily,
-		[`${props.fontFamily}-${props.type}`]: !!props.fontFamily,
+		[fontFamily]: !!fontFamily,
+		[`${fontFamily}-${props.type}`]: !!fontFamily,
 		[`mkicon--${showStyle}`]: !!showStyle,
 		[props.className]: !!props.className
 	})
 
-	return <Icon {...props} className={className} />
+	return <Icon {...other} className={className} />
 }

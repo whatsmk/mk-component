@@ -42,6 +42,7 @@ export default class cellComponent extends React.PureComponent {
 			className,
 			align,
 			children,
+			columnKey,
 			...other
     	} = this.props
 
