@@ -51,8 +51,8 @@ class ModalComponent extends Component {
 		children = React.cloneElement(children, {
 			setOkListener: this.setOkListener,
 			setCancelLister: this.setCancelListener,
-			parentCancel: this.handleCancel,
-			parentOk: this.handleOk
+			modalCancel: this.handleCancel,
+			modalOk: this.handleOk
 		})
 		
 		return (
