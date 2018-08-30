@@ -12,12 +12,14 @@ function ButtonComponent(props) {
 		[props.className]: !!props.className
 	})
 
-	const iconNode = props.icon
-		? <Icon type={props.icon} fontFamily={props.iconFontFamily} showStyle={props.iconShowStyle} />
+	let {iconFontFamily,iconShowStyle, icon, ...other} = props 
+
+	const iconNode = icon
+		? <Icon type={icon} fontFamily={iconFontFamily} showStyle={iconShowStyle} />
 		: null
 
 	let children = props.children || null
-	let ps = { ...omit(props, ['icon']), className: className }
+	let ps = { ...other, className: className }
 
 	if (iconNode && !children) {
 		return (

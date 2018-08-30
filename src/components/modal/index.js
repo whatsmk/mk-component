@@ -50,7 +50,9 @@ class ModalComponent extends Component {
 		var { children, ...otherProps } = this.props
 		children = React.cloneElement(children, {
 			setOkListener: this.setOkListener,
-			setCancelLister: this.setCancelListener
+			setCancelLister: this.setCancelListener,
+			parentCancel: this.handleCancel,
+			parentOk: this.handleOk
 		})
 		
 		return (
