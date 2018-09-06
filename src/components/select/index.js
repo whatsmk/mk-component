@@ -1,6 +1,7 @@
 import React from 'react'
 import Select from 'mk-rc-select'
 import classNames from 'classnames'
+import Icon from '../icon';
 
 function SelectComponent(props) {
 	let { className, notFoundContent, optionLabelProp,
@@ -35,8 +36,19 @@ function SelectComponent(props) {
 		suffix = React.cloneElement(props.suffix, { style: { float: "right" } })
 	}
 
+	const inputIcon = (
+		<Icon type="down" className={`ant-select-arrow-icon`} />
+	  );
+  
+	  const removeIcon = (
+		<Icon type="close" className={`ant-select-remove-icon`} />
+	  );
+  
+
 
 	return (<Select
+		inputIcon={inputIcon}
+        removeIcon={removeIcon}
 		{...otherProps}
 		{...modeConfig}
 		prefixCls='ant-select'

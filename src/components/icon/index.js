@@ -1,6 +1,6 @@
 import React from 'react'
 import { Icon } from 'antd'
-import FA from 'react-fa'
+//import FA from 'react-fa'
 import classNames from 'classnames'
 
 export default function IconComponent(props) {
@@ -15,14 +15,14 @@ export default function IconComponent(props) {
 
 	let className = 'mk-icon'
 
-	if (fontFamily == 'awesome') {
+	/*if (fontFamily == 'awesome') {
 		className = classNames({
 			[className]: true,
 			[`mkicon--${showStyle}`]: !!showStyle,
 			[props.className]: !!props.className
 		})
 		return <FA {...other} className={className} name={props.type} />
-	}
+	}*/
 
 	className = classNames({
 		[className]: true,
