@@ -59,7 +59,6 @@ export default function GridComponent(props) {
 			}))
 		}
 	}
-
 	return (
 		<Table
 			{...other}
